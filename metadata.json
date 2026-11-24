@@ -1,0 +1,6 @@
+{
+  "name": "The Tower Residences — Architectural Experience",
+  "description": "Interactive 2.5D architectural tower elevation, floor selection, cinematic GSAP zoom, and multi-scene interior exploration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

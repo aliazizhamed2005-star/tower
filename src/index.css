@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-obsidian: #0b0c0e;
+  --color-charcoal: #141619;
+  --color-ivory: #f4f0ea;
+  --color-limestone: #a6a095;
+  --color-champagne: #c8a96e;
+  --color-champagne-light: #dfc48f;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0c0e;
+    color: #f4f0ea;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom minimal architectural scrollbar */
+.arch-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.arch-scroll::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.arch-scroll::-webkit-scrollbar-thumb {
+  background: rgba(200, 169, 110, 0.35);
+  border-radius: 2px;
+}
+
+.arch-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 169, 110, 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+  }
+}
